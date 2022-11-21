@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo JavaScript</title>
     <link rel="shortcut icon" href="icon-javascript.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <h1><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank">www.w3schools.com</a>
+    </h1>
+</header>
 <body>
-    <article>
-        <h1>Aprendendo JavaScript</h1>
+        <article>
+        <h1>JavaScript pode alterar o conteúdo HTML</h1>
         <p id="demo">Isso é mostrado na tela mas quando eu</p> <button type="button" onclick='document.getElementById("demo").innerHTML = "Muda o que eu escrevi na tela"'>Clico Aqui</button>
     </article>
+    <hr>
     <article>
         <h1>O que o JavaScript pode fazer?</h1>
         <button onclick="document.getElementById('myImage').src='/feliz.png'">Feliz</button>
@@ -22,5 +28,29 @@
 
         <button onclick="document.getElementById('myImage').src='/triste.png'">Triste</button>
     </article>
+    <hr>
+    <article>
+        <p id="demo1">JavaScript pode mudar estilos de um elemento HTML</p>
+
+        <button type="button" onclick="document.getElementById('demo1').style.fontSize='40px'">Grande</button>
+
+        <button type="button" onclick="document.getElementById('demo1').style.fontSize='10px'">Pequeno</button>
+
+        <button type="button" onclick="document.getElementById('demo1').style.color='red'">Vermelho</button>
+
+        <button type="button" onclick="document.getElementById('demo1').style.color='blue'">Azul</button>
+    </article>
+    <hr>
+    <article>
+        <h1>JavaScript pode ocultar elementos HTML</h1>
+        <!--Ocultar elementos HTML pode ser feito alterando o display estilo-->
+        <p id="demo2">Preciso sumir daqui!</p>
+        <button type="button" onclick="document.getElementById('demo2').style.display='none'">Tchau</button>
+        <!--JavaScript pode mostrar elementos HTML-->
+    
+        <button type="button" onclick="document.getElementById('demo2').style.display='block'">Desfazer</button>
+    </article>
+    <hr>
+
 </body>
 </html>
