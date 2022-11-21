@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+    <link rel="shortcut icon" href="icon-javascript.ico" type="image/x-icon">
+</head>
+<body>
+    <article>
+        <h1>Aprendendo JavaScript</h1>
+        <p id="demo">Isso é mostrado na tela mas quando eu</p> <button type="button" onclick='document.getElementById("demo").innerHTML = "Muda o que eu escrevi na tela"'>Clico Aqui</button>
+    </article>
+    <article>
+        <h1>O que o JavaScript pode fazer?</h1>
+        <button onclick="document.getElementById('myImage').src='/feliz.png'">Feliz</button>
+
+        <img id="myImage"
+        src="/triste.png"
+        style="width: 200px">
+
+        <button onclick="document.getElementById('myImage').src='/triste.png'">Triste</button>
+    </article>
+</body>
+</html>
