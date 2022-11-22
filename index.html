@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,23 +13,25 @@
     <h1><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank">www.w3schools.com</a>
     </h1>
 </header>
+
 <body>
-        <article>
-        <h1>JavaScript pode alterar o conteúdo HTML</h1>
-        <p id="demo">Isso é mostrado na tela mas quando eu</p> <button type="button" onclick='document.getElementById("demo").innerHTML = "Muda o que eu escrevi na tela"'>Clico Aqui</button>
-    </article>
     <hr>
+    <h1><a href="https://www.w3schools.com/js/js_intro.asp">JS Introduction</a></h1>
     <article>
-        <h1>O que o JavaScript pode fazer?</h1>
+        <h2>JavaScript pode alterar o conteúdo HTML</h2>
+        <p id="demo">Isso é mostrado na tela mas quando eu</p> <button type="button"
+            onclick='document.getElementById("demo").innerHTML = "Muda o que eu escrevi na tela"'>Clico Aqui</button>
+    </article>
+    <br>
+    <article>
+        <h2>O que o JavaScript pode fazer?</h2>
         <button onclick="document.getElementById('myImage').src='/feliz.png'">Feliz</button>
 
-        <img id="myImage"
-        src="/triste.png"
-        style="width: 200px">
+        <img id="myImage" src="/triste.png" style="width: 200px">
 
         <button onclick="document.getElementById('myImage').src='/triste.png'">Triste</button>
     </article>
-    <hr>
+    <br>
     <article>
         <p id="demo1">JavaScript pode mudar estilos de um elemento HTML</p>
 
@@ -40,17 +43,70 @@
 
         <button type="button" onclick="document.getElementById('demo1').style.color='blue'">Azul</button>
     </article>
-    <hr>
+    <br>
     <article>
-        <h1>JavaScript pode ocultar elementos HTML</h1>
+        <h2>JavaScript pode ocultar elementos HTML</h2>
         <!--Ocultar elementos HTML pode ser feito alterando o display estilo-->
         <p id="demo2">Preciso sumir daqui!</p>
         <button type="button" onclick="document.getElementById('demo2').style.display='none'">Tchau</button>
         <!--JavaScript pode mostrar elementos HTML-->
-    
+
         <button type="button" onclick="document.getElementById('demo2').style.display='block'">Desfazer</button>
     </article>
     <hr>
-
+    <h1><a href="https://www.w3schools.com/js/js_whereto.asp" target="_blank">JS Where To</a></h1>
+    <article>
+        <!--Em HTML, o código JavaScript é inserido entre as tags <script> e .</script>-->
+        <h2>JavaScript in Body
+        </h2>
+        <p id="demo3"></p>
+        <script>document.getElementById("demo3").innerHTML = "My First JavaScript";</script>
+    </article>
+    <br>
+    <article>
+        <h2>JavaScript em &#60;head&#62; ou &#60;body&#62;
 </body>
+</h2>
+<p>Os scripts podem ser colocados no body, ou na head seção de uma página HTML, ou em ambos.</p>
+</article>
+<br>
+<article>
+    <h2>JavaScript externo</h2>
+    <p id="demo5">Um parágrafo.</p>
+
+    <button type="button" onclick="myFunction()">Clique Aqui Para Mudar</button>
+
+    <p>Esse exemplo linka o HMLT com o "index.js"</p>
+    <p>(myFunction é armazenado em "index.js")</p>
+
+    <script src="index.js"></script>
+    <!--Os scripts externos não podem conter <script> tags.
+            
+        Para adicionar vários arquivos de script a uma página - use várias tags de script:
+            <script src="myScript1.js"></script>
+            <script src="myScript2.js"></script> -->
+</article>
+<br>
+<article>
+    <h2>Referências Externas</h2>
+    <p class="small"> A listá está comentada no HTML</p>
+    <ul>
+        <li>Este exemplo usa um URL completo para vincular a myScript.js:</li>
+
+        <button type="button" onclick="myFunction()">URL completo</button>
+        <!--<script src="https://www.w3schools.com/js/myScript.js"></script> -- Não tem como testar pois o meu Script está vinculado ao meu js. não tem URL externa, ele está usando o mesmo caminho do .js para mudar o parágrafo pelo botão URL completo-->
+
+        <li>Este exemplo usa um caminho de arquivo para vincular a myScript.js:</li>
+
+        <!--<script src="/js/myScript.js"></script>-->
+
+        <li>Este exemplo não usa nenhum caminho para vincular a myScript.js:</li>
+
+        <!--<script src="myScript.js"></script>-->
+    </ul>
+</article>
+<hr>
+<h1><a href="https://www.w3schools.com/js/js_output.asp" target="_blank">JavaScript Output</a></h1>
+</body>
+
 </html>

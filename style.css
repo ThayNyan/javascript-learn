@@ -11,5 +11,13 @@ article {
     background-color: azure;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.247);
+    box-shadow: 1px 2px 5px #0000003f;
+}
+.small {
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+}
+
+li {
+    text-align: left;
 }
