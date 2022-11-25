@@ -111,7 +111,7 @@
     <h2>Usando innerHTML</h2>
     <p>no index.js está projetado o calculo</p>
     <p id="inner"></p>
-<button type="button" onclick="myFunction()">Resultado</button>
+    <button type="button" onclick="myFunction()">Resultado</button>
 </article>
 <br>
 <article>
@@ -135,6 +135,54 @@
     Em JavaScript, o objeto janela é o objeto de escopo global. Isso significa que variáveis, propriedades e métodos, por padrão, pertencem ao objeto janela. Isso também significa que especificar a windowpalavra-chave é opcional:-->
 </article>
 <br>
+<article>
+    <h2>Usando console.log()</h2>
+    <h3>Activate Debugging</h3>
+
+    <p>F12 on your keyboard will activate debugging.</p>
+    <p>Then select "Console" in the debugger menu.</p>
+    <p>Then click Run again.</p>
+    <script>
+        console.log(5 + 6);
+    </script>
+</article>
+<br>
+<article>
+    <h2>Imprimir JavaScript</h2>
+    <p>Clicando no botão você imprime a página atual da web.</p>
+    <button onclick="window.print()">Imprimir a página</button>
+</article>
+<h1><a href="https://www.w3schools.com/js/js_statements.asp" target="_blank">Instruções JavaScript</a></h1>
+    <!--A maioria dos programas JavaScript contém muitas instruções JavaScript.
+    As instruções são executadas, uma a uma, na mesma ordem em que são escritas.-->
+<article>
+    <h2>Ponto-e-vírgula;</h2>
+    <p>Ponto e vírgula separam instruções JavaScript. Adicione um ponto e vírgula no final de cada instrução executável:
+    </p>
+    <p id="demo6"></p>
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById("demo6").innerHTML = c;
+    </script>
+     <!--Quando separados por ponto e vírgula, são permitidas várias instruções em uma linha: a = 5; b = 6; c = a + b;-->
+</article>
+<br>
+<article>
+    <h2>Blocos de código JavaScript</h2>
+    <p>As instruções JavaScript podem ser agrupadas em blocos de código, entre chaves {...}.
+
+        O objetivo dos blocos de código é definir instruções a serem executadas juntas.
+        
+        Um lugar onde você encontrará instruções agrupadas em blocos é nas funções JavaScript:</p>
+
+        <button type="button" onclick="myFunction()">Conversa</button>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+
+</article>
 </body>
 
 </html>
